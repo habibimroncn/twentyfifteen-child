@@ -31,16 +31,16 @@
 				<?php
 					if ( is_front_page() && is_home() ) : ?>
 						<!--h1 class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1-->
-						<div>
-						 <a href="http://latianwordpress.app/" title="Latian Wordpress" rel="home">
-						<img src="http://latianwordpress.app/wp-content/uploads/2015/10/giphy.gif" alt="Latian-Wordpress">
+						<div class="circular-logo">
+						 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Latian Wordpress" rel="home">
+						<img src="http://latianwordpress.app/wp-content/uploads/2015/10/giphy.gif" alt="Latian-Wordpress"> 
 						</a>
 						</div>
 					<?php else : ?>
 						<!--p class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p-->
-						<div>
-						 <a href="http://latianwordpress.app/" title="Latian Wordpress" rel="home">
-						<img src="http://latianwordpress.app/wp-content/uploads/2015/10/giphy.gif" alt="Latian-Wordpress">
+						<div class="circular-logo">
+						 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Latian Wordpress" rel="home">
+						<img src="http://latianwordpress.app/wp-content/uploads/2015/10/giphy.gif" alt="Latian-Wordpress"> 
 						</a>
 						</div>
 					<?php endif;
@@ -59,7 +59,7 @@
 
 	<div id="content" class="site-content">
 	<?php 
-    if (is_home() || is_front_page()) {
-        echo do_shortcode("[metaslider id=49]"); // replace 123 with your slideshow ID
-    }
+    // if (is_home() || is_front_page()) {
+    //     echo do_shortcode("[metaslider id=49]"); // replace 123 with your slideshow ID
+    // }
 ?>

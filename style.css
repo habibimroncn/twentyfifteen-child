@@ -100,14 +100,24 @@ body:before,
 /* change stylish color in sidebara and main */
 
 .hentry {
-    background: #F8F8B0;
+    background: #FFF;
 }
 
 .entry-footer {
-    background: #5A5A56;
+    background-color: #5A5A56;
     color: #fff;
 }
 
 .entry-footer a {
     color: #fff;
+}
+
+/* Circular Logo*/
+.circular-logo {
+	width: 160px;	
+	height: 160px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://latianwordpress.app/wp-content/uploads/2015/10/giphy.gif) no-repeat;
 }
