@@ -1,0 +1,113 @@
+/*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+article {
+	opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.sidebar {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+span.cat-links, span.byline {
+display: none;
+}
+
+.single-post .posted-on:before {
+   display: none;
+}
+
+/*@media screen and (min-width: 59.6875em) {
+	.site-content {
+		float: left;
+		margin-left: 0px;
+		width: 70.5882%;
+	}
+	
+	.sidebar {
+		float: right;
+		right:0;
+		margin-right: 0px;
+		max-width: 413px;
+		width: 29.4118%;
+	}
+	
+	body:before {
+		right: 0;
+		left:auto;
+	}
+	
+	.site-footer {
+		margin: 0 0 0 6.1%;
+	}
+
+}*/
+/*
+body:before,
+#sidebar,
+#colophon,
+.entry-footer {
+	display:none;
+}
+
+.site-content {
+	margin: 0 auto;
+	float: none;
+	width: 100%;
+	max-width: 1200px;
+}
+*/
+
+.after-post-section h3 {
+    color: #333;
+    font-size:1.3rem;
+    display:inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:700;
+    margin: 0 0 1em 0;
+    line-height: 1.2;
+    opacity:0.7;
+    text-transform: uppercase;
+    vertical-align: baseline;
+}
+
+.after-post-section h3::before {
+    content: "";
+    display: block;
+    width: 100%;
+    min-width: 30px;
+    border-top: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.after-post-section .section-content {
+    font-size: 0.8em;
+}
+
+/* change stylish color in sidebara and main */
+
+.hentry {
+    background: #F8F8B0;
+}
+
+.entry-footer {
+    background: #5A5A56;
+    color: #fff;
+}
+
+.entry-footer a {
+    color: #fff;
+}
