@@ -6,6 +6,15 @@ function theme_enqueue_styles() {
     // Add Font Awesome
 	wp_enqueue_style( 'fonts-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
 
+	//add scripts
+	wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/functions.js', array('jquery'), '20150511', true );
+
+}
+
+add_action( 'init', 'add_nav_menu' );
+function add_nav_menu(){
+	register_nav_menus( array('secondary' => __( 'Secondary Menu', 'twentyfifteen'),
+		) );
 }
 
 
